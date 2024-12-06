@@ -1,6 +1,5 @@
 {% set version = '1.0.0' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-webmockr
@@ -13,8 +12,7 @@ source:
   sha256: 7352a2c08f2af95d2d11180b072d1c375e7fc76c4cfdf3bed4e033605a914626
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
