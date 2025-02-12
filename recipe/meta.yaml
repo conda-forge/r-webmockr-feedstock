@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/webmockr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/webmockr/webmockr_{{ version }}.tar.gz
-  sha256: 7352a2c08f2af95d2d11180b072d1c375e7fc76c4cfdf3bed4e033605a914626
+  sha256: 4e6035c50c27834a0fccbcf0407ab6963cff2e844622c4c2fbfdb853fe9a1a11
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -57,10 +57,7 @@ about:
   dev_url: https://github.com/ropensci/webmockr
   doc_url: https://docs.ropensci.org/webmockr/
   license: MIT
-  summary: Stubbing and setting expectations on 'HTTP' requests. Includes tools for stubbing
-    'HTTP' requests, including expected request conditions and response conditions.
-    Match on 'HTTP' method, query parameters, request body, headers and more. Can be
-    used for unit tests or outside of a testing context.
+  summary: Stubbing and setting expectations on 'HTTP' requests. Includes tools for stubbing 'HTTP' requests, including expected request conditions and response conditions. Match on 'HTTP' method, query parameters, request body, headers and more. Can be used for unit tests or outside of a testing context.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
