@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/webmockr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/webmockr/webmockr_{{ version }}.tar.gz
-  sha256: bf1554f4130a0c058818dad8899fdd983beee6b4232883f3399521dd0629d2df
+  sha256: 7e83445e4804759d01ca39e54098bb5ee21be29fce7c2c5383753ded63df4050
 
 build:
   number: 0
